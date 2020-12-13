@@ -1,3 +1,34 @@
 body {
     font-family: 'Roboto', sans-serif;
+    color: #666666;
+}
+
+.navbar .navbar-side {
+    display: none;
+}
+
+.navbar .navbar-bottom {
+    background-color: #fff;
+    bottom: 0;
+    filter: drop-shadow(-2px 0 4px #cccccc);
+    padding: 12px 0;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar .navbar-bottom button.navbar-bottom-item {
+    background-color: #fff;
+    border: none;
+    margin: 0;
+    float: left;
+    text-align: center;
+    width: calc(100% / 3);
+}
+
+.navbar .navbar-bottom button.navbar-bottom-item .icon {
+    height: 23px;
+}
+
+.navbar .navbar-bottom button.navbar-bottom-item .title {
+    font-size: 11px;
 }
