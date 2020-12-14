@@ -107,6 +107,11 @@ body {
         position: absolute;
         width: 100%;
     }
+        @media screen and (min-width: 992px) {
+            .container .map {
+                background: url(../img/map-mockup-desktop.png);
+            }
+        }
 
     .container .search {
         margin: 15px auto;
