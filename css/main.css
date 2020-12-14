@@ -129,6 +129,7 @@ body {
 
     .map-container .search {
         margin: 15px auto;
+        position: relative;
         width: 94%;
     }
         @media screen and (min-width: 992px) {
@@ -153,18 +154,25 @@ body {
             font-family: Roboto;
             font-size: 20px;
             font-weight: 300;
-            height: 44px;
-            padding: 0 15%;
-            width: 70%;
+            height: 45px;
+            padding: 0 55px;
+            width: calc(100% - 110px);
         }
             @media screen and (min-width: 992px) {
                 .map-container .search input {
                     border-radius: 10px;
-                    height: 44px;
-                    padding: 0 20px;
-                    width: 320px;
+                    padding: 0 55px 0 15px;
+                    width: 290px;
                 }
             }
+
+        .map-container .search .search__mylocation {
+            color: #999999;
+            font-size: 21px;
+            position: absolute;
+            right: 17px;
+            top: 12px;
+        }
         
         .map-container .map-labels {
             background: #ffffff;
