@@ -5,96 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"> 
-    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/mui.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/mui.min.js"></script>
+    <script src="js/main.js"></script>
     <title>More Clean Water</title>
 </head>
-<body>
-    <div class="navbar">
-        <div class="navbar-side">
-        <div class="side-navbar-button"></div>
-
-            <div class="title">
-                More Clean Water
-            </div>
-
-            <div class="map-label-navbar">
-                <div class="map-label-navbar-item station">
-                    <div class="icon"></div>
-                    <div class="text">Clean Water Station</div>
-                </div>
-
-                <div class="map-label-navbar-item natural">
-                    <div class="icon"></div>
-                    <div class="text">Natural Water Source</div>
-                </div>
-
-                <div class="map-label-navbar-item alerts">
-                    <div class="icon"></div>
-                    <div class="text">Alerts</div>
-                </div>
-
-                <div class="map-label-navbar-item groundwater">
-                    <div class="icon"></div>
-                    <div class="text">Groundwater</div>
-                </div>
-            </div>
-
-            <div class="side-navbar-item">
-                <div class="title">
-                    Dashboard
-                </div>
-            </div>
-            
-            <div class="side-navbar-item">
-                <div class="title">
-                    User profile
-                </div>
-            </div>
-        </div>
-
-        <div class="navbar-bottom">
-            <button class="navbar-bottom-item awareness">
-                <div class="icon">
-                    <img src="img/menu-awareness.png" alt="">
-                </div>
-                <div class="title">
-                    Water Awareness
-                </div>
-            </button>
-            <button class="navbar-bottom-item find-water">
-                <div class="icon">
-                    <img src="img/menu-findwater.png" alt="">
-                </div>
-                <div class="title">
-                    Find Water
-                </div>
-            </button>
-            <button class="navbar-bottom-item updates">
-                <div class="icon">
-                    <img src="img/menu-updates.png" alt="">
-                </div>
-                <div class="title">
-                    Updates
-                </div>
-            </button>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="map">
-
-        </div>
-
+<body style="background-image: url('img/map-mockup.png');">
+    
+    <div> 
+    <header class = "title">
+        <h3> More Clean Water</h3>
+        
         <div class="search">
             <form action="">
-                <label for="fsearch">Search</label>
-                <input type="text" id="fsearch" name="fsearch" value="Search">
+                <!--<label for="fsearch">Search</label>   -->
+                <div class="navbar-button" ><img src="img/menu-black.png" onclick="activateOverlay()">
+                    <input type="text" id="fsearch" name="fsearch" value="Search">
+                </div>
             </form>
         </div>
-    </div>
-    
-    <script src="js/main.js"></script>
+    </header>
+    <main>
+        <div class="navbar">
+            <div id = "water-menu" class="navbar-side">
+                <div class="menu-title">
+                    <h4> More Clean Water</h4>
+                </div>
+                <ul class ="menu-container">
+                    <li >
+                        <div class='menu-icon'>
+                            <img src="img/red-pin.png">
+                        </div>	
+                        <div class="menu-item">
+                            <h5>Clean Water Station</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='menu-icon'>
+                            <img src="img/pin-natural.png">
+                        </div>	
+                        <div class="menu-item">
+                            <h5>Natural Water Source</h5>
+                        </div>
+                       
+                    </li>
+                    <li>
+                        <div class='menu-icon'>
+                            <img src="img/pin-alert.png">
+                        </div>	
+                        <div class="menu-item">
+                            <h5>Alerts</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div class='menu-icon'>
+                            <img src="img/pin-natural.png">
+                        </div>	
+                        <div class="menu-item">
+                            <h5>Ground Water</h5>
+                        </div>
+                    </li>
+                    <li>
+                       <div class="side-navbar-item">
+                            <h5>Dashboard</h5>
+                         </div>
+                    </li>
+                    <li>
+                        <div class="side-navbar-item">
+                            <h5>User Profile</h5>
+                         </div>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="navbar-bottom">
+                <button class="navbar-bottom-item awareness">
+                    <div class="icon">
+                        <img src="img/menu-awareness.png" alt="">
+                    </div>
+                    <div class="title">
+                        Water Awareness
+                    </div>
+                </button>
+                <button class="navbar-bottom-item find-water">
+                    <div class="icon">
+                        <img src="img/menu-find.png" alt="">
+                    </div>
+                    <div class="title">
+                        Find Water
+                    </div>
+                </button>
+                <button class="navbar-bottom-item updates">
+                    <div class="icon">
+                        <img src="img/menu-updates.png" alt="">
+                    </div>
+                    <div class="title">
+                        Updates
+                    </div>
+                </button>
+            </div>
+        </div>
+</main>
 </body>
 </html>

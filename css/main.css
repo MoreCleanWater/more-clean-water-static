@@ -1,12 +1,24 @@
-body {
+.body {
     font-family: 'Roboto', sans-serif;
     color: #666666;
 }
 
+.title {
+    padding: 0 15px;
+    color: #0000ff;
+}
+  
 .navbar .navbar-side {
     display: none;
+    width: auto;
+    height: auto;
 }
 
+.navbar .navbar-button {
+    height: 23px;
+    margin: 10px;
+    padding: 10px 10px;
+}
 .navbar .navbar-bottom {
     background-color: #fff;
     bottom: 0;
@@ -27,8 +39,44 @@ body {
 
 .navbar .navbar-bottom button.navbar-bottom-item .icon {
     height: 23px;
+    margin: 10px;
+    padding: 10x 10px;
 }
 
 .navbar .navbar-bottom button.navbar-bottom-item .title {
     font-size: 11px;
+}
+
+.menu-icon {
+    margin-left:2%;
+    float:left; 
+    height:15px;
+    width:15px;	
+} 
+   
+.menu-container {
+    width:100%;
+    height:auto;
+    padding:1%;
+}
+   
+.menu-title {
+    margin-left:2%;
+    color: #0000ff;
+}
+
+.menu-item {
+    margin-left:30px;
+    text-align: left;
+}
+
+.menu-button{
+    color: #2196F3;
+    background-color: #fff;
+    border: none;
+}
+
+.side-navbar-item{
+    margin-left:2%;
+    text-align: left;
 }
