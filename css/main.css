@@ -237,18 +237,45 @@ body {
                 }
 
 .water-awareness-container {
-    margin-top: 20px;
+    margin: 30px 0 70px;
 }
     @media screen and (min-width: 992px) {
         .water-awareness-container {
             margin-top: 100px;
+            margin-bottom: 30px;
         }
     }
+
     .water-awareness-container .content {
         background: #fff;
-        padding: 30px;
+        filter: drop-shadow(0 4px 2px rgba(0,0,0,.1));
+        padding: 10px 40px;
+        margin-bottom: 20px;
     }
-        .water-awareness-container .content__title {
 
+        @media screen and (min-width: 992px) {
+            .water-awareness-container .content {
+                margin-bottom: 0;
+            }
         }
+
+    .water-awareness-container .content:last-child {
+        padding-bottom: 30px;
+    }
+
+    .water-awareness-container .content h1,
+    .water-awareness-container .content h2 {
+        font-weight: 300;
+    }
+
+    .water-awareness-container .content h1 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .water-awareness-container .content h2 {
+        font-size: 20px;
+        margin-top: 2px;
+        margin-bottom: 5px;
+    }
            
