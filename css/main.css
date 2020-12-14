@@ -12,7 +12,7 @@ body {
     background-color: #fff;
     bottom: 0;
     filter: drop-shadow(0 -1px 4px rgba(0,0,0,.1));
-    padding: 12px 0;
+    padding: 11px 0;
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -35,8 +35,11 @@ body {
         text-align: center;
         width: calc(100% / 3);
     }
-        .bottom-bar__menu .bottom-bar__item .bottom-bar__icon {
+        .bottom-bar__menu .bottom-bar__item .bottom-bar__icon.material-icons {
+            color: #999999;
+            display: block;
             height: 23px;
+            margin-bottom: 2px;
         }
 
         .bottom-bar__menu .bottom-bar__item .bottom-bar__title {
@@ -129,10 +132,11 @@ body {
     }
         @media screen and (min-width: 992px) {
             .container .search {
-                position: absolute;
+                position: fixed;
                 left: 30px;
                 top: 100px;
                 width: initial;
+                z-index: 1;
             }
         }
 
@@ -152,12 +156,51 @@ body {
             padding: 0 15%;
             width: 70%;
         }
-        @media screen and (min-width: 992px) {
-            .container .search input {
-                border-radius: 10px;
-                
-                height: 44px;
-                padding: 0 20px;
-                width: 340px;
+            @media screen and (min-width: 992px) {
+                .container .search input {
+                    border-radius: 10px;
+                    height: 44px;
+                    padding: 0 20px;
+                    width: 320px;
+                }
             }
+        
+        .container .map-labels {
+            background: #ffffff;
+            border-radius: 10px;
+            display: none;
+            position: fixed;
+            left: 30px;
+            padding: 60px 20px 20px;
+            top: 115px;
+            width: 320px;
         }
+            .container .map-labels .map-labels__item {
+                width: 100%;
+                float: left;
+                margin-top: 24px;
+            }
+            .container .map-labels .map-labels__item:first-child {
+                margin-top: 0;
+            }
+                .container .map-labels .map-labels__item > * {
+                    float: left;
+                }
+
+                .container .map-labels .map-labels__item .map-labels__icon.material-icons {
+                    font-size: 27px;
+                }
+
+                .container .map-labels .map-labels__item .map-labels__title {
+                    color: #666666;
+                    font-weight: 300;
+                    line-height: 27px;
+                    font-size: 14px;
+                    margin-left: 20px;
+                }
+
+            @media screen and (min-width: 992px) {
+                .container .map-labels {
+                    display: block;
+                }
+            }
