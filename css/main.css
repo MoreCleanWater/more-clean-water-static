@@ -3,12 +3,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.navbar .navbar-side {
+.navbar .sidebar {
     display: none;
     z-index: 2;
 }
 
-.navbar .navbar-bottom {
+.navbar .bottom-bar {
     background-color: #fff;
     bottom: 0;
     filter: drop-shadow(0 -1px 4px rgba(0,0,0,.1));
@@ -17,8 +17,10 @@ body {
     width: 100%;
     z-index: 1;
 }
-
-    .navbar .navbar-bottom button.navbar-bottom-item {
+    .navbar .bottom-bar__menu {
+        width: 100%;
+    }
+    .navbar .bottom-bar__menu .bottom-bar__item {
         background-color: #fff;
         border: none;
         margin: 0;
@@ -26,19 +28,22 @@ body {
         text-align: center;
         width: calc(100% / 3);
     }
-
-        .navbar .navbar-bottom button.navbar-bottom-item .icon {
+        .navbar .bottom-bar__menu .bottom-bar__item .bottom-bar__icon {
             height: 23px;
         }
 
-        .navbar .navbar-bottom button.navbar-bottom-item .title {
+        .navbar .bottom-bar__menu .bottom-bar__item .bottom-bar__title {
             font-size: 11px;
             font-weight: 300;
         }
 
-            .navbar .navbar-bottom button.navbar-bottom-item.selected .title {
+            .navbar .bottom-bar__menu .bottom-bar__item.selected .bottom-bar__title {
                 font-weight: 400;
             }
+
+.navbar .top-bar {
+    display: none;
+}
 
 .container {
     height: 100%;
