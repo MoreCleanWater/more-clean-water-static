@@ -1,5 +1,5 @@
 body {
-    color: #666666;
+    color: #606060;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -30,13 +30,17 @@ body {
     .bottom-bar__menu .bottom-bar__item {
         background-color: #fff;
         border: none;
+        color: #666666;
         float: left;
         margin: 0;
         text-align: center;
         width: calc(100% / 3);
     }
-        .bottom-bar__menu .bottom-bar__item .bottom-bar__icon.material-icons {
-            color: #999999;
+        .bottom-bar__menu .bottom-bar__item.selected {
+            color: #c82a29
+        }
+
+        .bottom-bar__menu .bottom-bar__item .bottom-bar__icon {
             display: block;
             height: 23px;
             margin-bottom: 2px;
@@ -46,9 +50,6 @@ body {
             font-size: 11px;
             font-weight: 300;
         }
-            .bottom-bar__menu .bottom-bar__item.selected .bottom-bar__title {
-                font-weight: 400;
-            }
 
 .top-bar {
     background-color: #fff;
@@ -90,7 +91,8 @@ body {
             margin-left: 61px;
         }
             .top-bar .top-bar__menu .top-bar__item.selected {
-                border-bottom: 3px solid #666666;
+                color: #288FEE;
+                border-bottom: 3px solid #288FEE;
             }
 
             .top-bar .top-bar__menu .top-bar__item.dashboard {
@@ -149,7 +151,6 @@ body {
         .map-container .search input {
             border: none;
             border-radius: 27px;
-            color: #666666;
             filter: drop-shadow(0 4px 2px rgba(0,0,0,.1));
             font-family: Roboto;
             font-size: 20px;
@@ -167,7 +168,6 @@ body {
             }
 
         .map-container .search .search__mylocation {
-            color: #999999;
             font-size: 21px;
             position: absolute;
             right: 17px;
@@ -204,12 +204,30 @@ body {
                     float: left;
                 }
 
-                .map-container .map-labels .map-labels__item .map-labels__icon.material-icons {
+                .map-container .map-labels .map-labels__item .map-labels__icon {
                     font-size: 27px;
+                    line-height: 27px;
                 }
+                    .map-container .map-labels .map-labels__item .map-labels__icon.station {
+                        color: #c82a29;
+                    }
+
+                    .map-container .map-labels .map-labels__item .map-labels__icon.natural {
+                        color: #9dc1f4;
+                    }
+
+                    .map-container .map-labels .map-labels__item .map-labels__icon.alerts {
+                        color: #c82a29;
+                        font-size: 24px;
+                    }
+
+                    .map-container .map-labels .map-labels__item .map-labels__icon.groundwater {
+                        font-size: 23px;
+                        color: #9dc1f4;
+                    }
 
                 .map-container .map-labels .map-labels__item .map-labels__title {
-                    color: #666666;
+                    color: #606060;
                     font-weight: 300;
                     line-height: 27px;
                     font-size: 14px;
