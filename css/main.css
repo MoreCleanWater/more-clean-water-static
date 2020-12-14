@@ -78,6 +78,7 @@ body {
         font-size: 20px;
         line-height: 26px;
         letter-spacing: 0.05em;
+        margin: 0;
     }
     
     .top-bar .top-bar__menu {
@@ -243,10 +244,11 @@ body {
             margin-top: 100px;
         }
     }
+    .water-awareness-container .content {
+        background: #fff;
+        padding: 30px;
+    }
+        .water-awareness-container .content__title {
 
-.water-awareness-container .mui-row .content {
-    background: #fff;
-    padding: 30px;
-}
-
+        }
            
