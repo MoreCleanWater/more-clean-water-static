@@ -8,93 +8,24 @@
     <link rel="stylesheet" href="css/mui.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/mui.min.js"></script>
-    <title>More Clean Water</title>
+    <title>Add User</title>
 </head>
-<body>
-    <div class="navbar">
-        <div class="navbar-side">
-        <div class="side-navbar-button"></div>
-
-            <div class="title">
-                More Clean Water
-            </div>
-
-            <div class="map-label-navbar">
-                <div class="map-label-navbar-item station">
-                    <div class="icon"></div>
-                    <div class="text">Clean Water Station</div>
-                </div>
-
-                <div class="map-label-navbar-item natural">
-                    <div class="icon"></div>
-                    <div class="text">Natural Water Source</div>
-                </div>
-
-                <div class="map-label-navbar-item alerts">
-                    <div class="icon"></div>
-                    <div class="text">Alerts</div>
-                </div>
-
-                <div class="map-label-navbar-item groundwater">
-                    <div class="icon"></div>
-                    <div class="text">Groundwater</div>
-                </div>
-            </div>
-
-            <div class="side-navbar-item">
-                <div class="title">
-                    Dashboard
-                </div>
-            </div>
-            
-            <div class="side-navbar-item">
-                <div class="title">
-                    User profile
-                </div>
-            </div>
-        </div>
-
-        <div class="navbar-bottom">
-            <button class="navbar-bottom-item awareness">
-                <div class="icon">
-                    <img src="img/menu-awareness.png" alt="">
-                </div>
-                <div class="title">
-                    Water Awareness
-                </div>
-            </button>
-            <button class="navbar-bottom-item find-water">
-                <div class="icon">
-                    <img src="img/menu-findwater.png" alt="">
-                </div>
-                <div class="title">
-                    Find Water
-                </div>
-            </button>
-            <button class="navbar-bottom-item updates">
-                <div class="icon">
-                    <img src="img/menu-updates.png" alt="">
-                </div>
-                <div class="title">
-                    Updates
-                </div>
-            </button>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="map">
-
-        </div>
-
-        <div class="search">
-            <form action="">
-                <label for="fsearch">Search</label>
-                <input type="text" id="fsearch" name="fsearch" value="Search">
-            </form>
-        </div>
-    </div>
-    
-    <script src="js/main.js"></script>
+<body class="mui-container">
+    <header>
+        <div class="img">
+            <img src="img/menuicon.png" alt="Search">
+        </div>	
+    </header>
+    <main>
+        <section class="mui--text-center">
+            <p><input id="add-name" class="add-user__input-field" placeholder="Name"></input></p>
+            <p><input id="add-email" class="add-user__input-field" placeholder="Email"></input></p>
+            <p><input id="add-pwd" class="add-user__input-field" placeholder="Pasword"></input></p>
+            <p><input id="add-cfrm-pwd" class="add-user__input-field" placeholder="Confirm Password"></input></p>
+        </section>
+        <section class="mui--text-center">
+            <p><button class="mui-btn mui-btn--raised mui-btn--primary button">OK</button></p>
+        </section>
+    </main>
 </body>
 </html>

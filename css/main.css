@@ -3,32 +3,23 @@ body {
     color: #666666;
 }
 
-.navbar .navbar-side {
-    display: none;
+.input-user-details {
+    height: 30px;
+    margin: 6px 0;
 }
 
-.navbar .navbar-bottom {
-    background-color: #fff;
-    bottom: 0;
-    filter: drop-shadow(-2px 0 4px #cccccc);
-    padding: 12px 0;
-    position: fixed;
-    width: 100%;
+.button {
+    background-color: #228b22;
+    height: 52px;
+    width: 111px;
 }
 
-.navbar .navbar-bottom button.navbar-bottom-item {
-    background-color: #fff;
-    border: none;
-    margin: 0;
-    float: left;
-    text-align: center;
-    width: calc(100% / 3);
+.img{
+    padding-top:15px;
 }
 
-.navbar .navbar-bottom button.navbar-bottom-item .icon {
-    height: 23px;
-}
-
-.navbar .navbar-bottom button.navbar-bottom-item .title {
-    font-size: 11px;
+.add-user__input-field {
+    height: 52px;
+    width: 319px;
+    margin: 20px;
 }
