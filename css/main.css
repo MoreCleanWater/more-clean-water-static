@@ -80,3 +80,27 @@
     margin-left:2%;
     text-align: left;
 }
+
+.input-search{
+     position: relative; 
+     width:240px; 
+     height: 40px;
+     margin: 6px 0;
+     box-sizing: border-box;
+     border-radius: 8px;
+     background-repeat: no-repeat; 
+     padding-left: 40px;
+}
+
+.input-search input { 
+    border:none; 
+    background:#fff;
+    display:block; 
+    width: 100%; 
+ 
+}
+
+.input-search img { 
+    position: LEFT; 
+    top: 2px; right: 5px ;
+}
