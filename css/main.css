@@ -48,9 +48,15 @@ body {
             }
 
 .top-bar {
+    background-color: #fff;
     display: none;
     height: 21px;
+    left: 0;
     padding: 27px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
     @media screen and (min-width: 992px) {
         .top-bar {
@@ -95,30 +101,30 @@ body {
 
 .container {
     height: 100%;
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 0;
 }
     .container .map {
-        background: url(../img/map-mockup.png) center top;
+        background-image: url(../img/map-mockup.png);
         background-position: center top;
         background-size: cover;
+        background-repeat: no-repeat;
         height: 100%;
-        position: absolute;
+        position: fixed;
         width: 100%;
     }
         @media screen and (min-width: 992px) {
             .container .map {
-                background: url(../img/map-mockup-desktop.png);
+                background-image: url(../img/map-mockup-desktop.png);
+                background-position: center bottom;
             }
         }
 
     .container .search {
         margin: 15px auto;
-        position: relative;
         width: 94%;
     }
-
         .container .search form label {
             display: none;
         }
