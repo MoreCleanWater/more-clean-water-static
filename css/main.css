@@ -117,7 +117,7 @@ body {
         @media screen and (min-width: 992px) {
             .container .map {
                 background-image: url(../img/map-mockup-desktop.png);
-                background-position: center bottom;
+                background-position: right bottom;
             }
         }
 
@@ -125,11 +125,20 @@ body {
         margin: 15px auto;
         width: 94%;
     }
-        .container .search form label {
+        @media screen and (min-width: 992px) {
+            .container .search {
+                position: absolute;
+                left: 30px;
+                top: 117px;
+                width: initial;
+            }
+        }
+
+        .container .search label {
             display: none;
         }
 
-        .container .search form input {
+        .container .search input {
             border: none;
             border-radius: 27px;
             color: #666666;
@@ -140,4 +149,13 @@ body {
             height: 44px;
             padding: 0 15%;
             width: 70%;
+        }
+        @media screen and (min-width: 992px) {
+            .container .search input {
+                border-radius: 10px;
+                
+                height: 44px;
+                padding: 0 20px;
+                width: 340px;
+            }
         }
