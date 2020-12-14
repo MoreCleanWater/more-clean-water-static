@@ -1,4 +1,5 @@
 body {
+    background-color: #e6e6e6;
     color: #606060;
     font-family: 'Roboto', sans-serif;
 }
@@ -47,7 +48,7 @@ body {
         }
 
         .bottom-bar__menu .bottom-bar__item .bottom-bar__title {
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 300;
         }
 
@@ -233,5 +234,19 @@ body {
                     font-size: 14px;
                     margin-left: 20px;
                 }
+
+.water-awareness-container {
+    margin-top: 20px;
+}
+    @media screen and (min-width: 992px) {
+        .water-awareness-container {
+            margin-top: 100px;
+        }
+    }
+
+.water-awareness-container .mui-row .content {
+    background: #fff;
+    padding: 30px;
+}
 
            
