@@ -104,35 +104,36 @@ body {
         text-align: center;
     }
 
-.container {
+.map-container {
     height: 100%;
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 0;
 }
-    .container .map {
+    .map-container .map {
         background-image: url(../img/map-mockup.png);
         background-position: center top;
         background-repeat: no-repeat;
         background-size: cover;
         height: 100%;
-        position: fixed;
+        position: absolute;
+        top: 0;
         width: 100%;
     }
         @media screen and (min-width: 992px) {
-            .container .map {
+            .map-container .map {
                 background-image: url(../img/map-mockup-desktop.png);
                 background-position: right bottom;
             }
         }
 
-    .container .search {
+    .map-container .search {
         margin: 15px auto;
         width: 94%;
     }
         @media screen and (min-width: 992px) {
-            .container .search {
-                position: fixed;
+            .map-container .search {
+                position: absolute;
                 left: 30px;
                 top: 100px;
                 width: initial;
@@ -140,11 +141,11 @@ body {
             }
         }
 
-        .container .search label {
+        .map-container .search label {
             display: none;
         }
 
-        .container .search input {
+        .map-container .search input {
             border: none;
             border-radius: 27px;
             color: #666666;
@@ -157,7 +158,7 @@ body {
             width: 70%;
         }
             @media screen and (min-width: 992px) {
-                .container .search input {
+                .map-container .search input {
                     border-radius: 10px;
                     height: 44px;
                     padding: 0 20px;
@@ -165,33 +166,41 @@ body {
                 }
             }
         
-        .container .map-labels {
+        .map-container .map-labels {
             background: #ffffff;
             border-radius: 10px;
             display: none;
-            position: fixed;
+            filter: drop-shadow(0 4px 2px rgba(0,0,0,.1));
             left: 30px;
             padding: 60px 20px 20px;
+            position: absolute;
             top: 115px;
             width: 320px;
-        }
-            .container .map-labels .map-labels__item {
+        }  
+            @media screen and (min-width: 992px) {
+                .map-container .map-labels {
+                    display: block;
+                }
+            }
+
+            .map-container .map-labels .map-labels__item {
                 width: 100%;
                 float: left;
                 margin-top: 24px;
             }
-            .container .map-labels .map-labels__item:first-child {
+            
+            .map-container .map-labels .map-labels__item:first-child {
                 margin-top: 0;
             }
-                .container .map-labels .map-labels__item > * {
+                .map-container .map-labels .map-labels__item > * {
                     float: left;
                 }
 
-                .container .map-labels .map-labels__item .map-labels__icon.material-icons {
+                .map-container .map-labels .map-labels__item .map-labels__icon.material-icons {
                     font-size: 27px;
                 }
 
-                .container .map-labels .map-labels__item .map-labels__title {
+                .map-container .map-labels .map-labels__item .map-labels__title {
                     color: #666666;
                     font-weight: 300;
                     line-height: 27px;
@@ -199,8 +208,4 @@ body {
                     margin-left: 20px;
                 }
 
-            @media screen and (min-width: 992px) {
-                .container .map-labels {
-                    display: block;
-                }
-            }
+           
