@@ -13,77 +13,77 @@
 </head>
 <body>
     <div class="sidebar">
-        <div class="sidebar__button"></div>
-        
-        <div class="sidebar__menu">
-            <div class="sidebar__title">
-                More Clean Water
-            </div>
-
-            <div class="sidebar__maplabels">
-                <div class="sidebar__item station">
-                    <div class="icon"></div>
-                    <div class="text">Clean Water Station</div>
-                </div>
-
-                <div class="sidebar__item natural">
-                    <div class="icon"></div>
-                    <div class="text">Natural Water Source</div>
-                </div>
-
-                <div class="sidebar__item alerts">
-                    <div class="icon"></div>
-                    <div class="text">Alerts</div>
-                </div>
-
-                <div class="sidebar__item groundwater">
-                    <div class="icon"></div>
-                    <div class="text">Groundwater</div>
-                </div>
-            </div>
-
-            <div class="sidebar__mainmenu">
-                <div class="sidebar__item">
-                    <div class="title">
-                        Dashboard
-                    </div>
-                </div>
-                
-                <div class="sidebar__item">
-                    <div class="title">
-                        User profile
-                    </div>
-                </div>
-            </div>
-
+        <div id="sidebar__button" class="sidebar__button material-icons">
+            menu
         </div>
         
+        <div id="sidebar__menu" class="sidebar__menu">
+            <h1 class="sidebar__title">
+                More Clean Water
+            </h1>
+
+            <ul id="sidebar__maplabels" class="sidebar__maplabels">
+                <li class="sidebar__item station">
+                    <div class="map-labels__icon material-icons">room</div>
+                    <h5>Clean Water Station</h5>
+                </li>
+
+                <li class="sidebar__item natural">
+                    <div class="map-labels__icon material-icons">room</div>
+                    <h5>Natural Water Source</h5>
+                </li>
+
+                <li class="sidebar__item alerts">
+                    <div class="map-labels__icon material-icons">info</div>
+                    <h5>Alerts</h5>
+                </li>
+
+                <li class="sidebar__item groundwater">
+                    <div class="map-labels__icon material-icons">waves</div>
+                    <h5>Groundwater</h5>
+                </li>
+            </ul>
+
+            <ul id="sidebar__mainmenu" class="sidebar__mainmenu">
+                <li class="sidebar__item">
+                    <h5 class="title">
+                        Dashboard
+                    </h5>
+                </li>
+                
+                <li class="sidebar__item profile">
+                    <h5 class="title">
+                        <a href="profile.html">User profile</a>
+                    </h5>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <div class="bottom-bar">
+    <div id="bottom-bar" class="bottom-bar">
         <div class="bottom-bar__menu">
-            <button class="bottom-bar__item water-awareness">
+            <button class="bottom-bar__item water-awareness selected">
                 <div class="bottom-bar__icon material-icons awareness">
-                    info
+                    <a href="awareness.html">info</a>
                 </div>
                 <div class="bottom-bar__title">
-                    Water Awareness
+                    <a href="awareness.html">Awareness</a>
                 </div>
             </button>
-            <button class="bottom-bar__item find-water selected">
+            <button class="bottom-bar__item find-water">
                 <div class="bottom-bar__icon material-icons">
-                    room
+                    <a href="findwater.html">room</a> 
                 </div>
                 <div class="bottom-bar__title">
-                    Find Water
+                    <a href="findwater.html">Find Water</a> 
                 </div>
             </button>
             <button class="bottom-bar__item updates">
                 <div class="bottom-bar__icon material-icons">
-                    notifications
+                    <a href="alerts.html">notifications</a>
                 </div>
                 <div class="bottom-bar__title">
-                    Updates
+                    <a href="alerts.html">Updates</a>
                 </div>
             </button>
         </div>
@@ -121,8 +121,9 @@
         </div>
     </div>
 
-    <div class="water-awareness-container">
-        <div class="mui-container">
+    <div id="container" class="container">
+        <div class="mui-container water-awareness-container">
+            <div class="top-bar"></div>
             <div class="mui-row">
                 <div class="content mui-col-xs-10 mui-col-xs-offset-1 mui-col-md-12 mui-col-md-offset-0">
                     <h2 class="content__title">
