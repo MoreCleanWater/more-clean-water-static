@@ -1,28 +1,25 @@
 body {
+    background-color: #e6e6e6;
     color: #606060;
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
-    background-color: #e6e6e6;
+.mobile-top-bar {
+    background: #ffffff;
+    display: block;
+    filter: drop-shadow(4px 0 4px rgba(0,0,0,.1));
+    height: 70px;
     left: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
+    width: 100%;
+    z-index: 1;
 }
-    .container .top-bar {
-        background: #ffffff;
-        display: block;
-        height: 28px;
-        left: 0;
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-        @media screen and (min-width: 992px) {
-            .container .top-bar {
-                display: none;
-            }
+    @media screen and (min-width: 992px) {
+        .mobile-top-bar {
+            display: none;
         }
+    }
 
 a {
     color: #606060;
@@ -60,7 +57,7 @@ a:hover {
         left: 0;
         position: fixed;
         transform: translateX(-100%);
-        transition: transform ease-out 250ms;
+        transition: transform ease-in-out 400ms;
         top: 0;
         width: 65%;
         z-index: 2;
@@ -227,27 +224,32 @@ a:hover {
         margin: 0;
     }
     
-    .top-bar .top-bar__menu {
+    .top-bar ul.top-bar__menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
         float: left;
     }
-        .top-bar .top-bar__menu .top-bar__item {
+        .top-bar ul.top-bar__menu li {
             float: left;
             font-family: Roboto;
             font-weight: 400;
             font-size: 18px;
             line-height: 26px;
+            margin: 0;
+            padding: 0;
             margin-left: 61px;
         }
-            .top-bar .top-bar__menu .top-bar__item.selected {
+            .top-bar ul.top-bar__menu li.selected {
                 color: #288FEE;
                 border-bottom: 3px solid #288FEE;
             }
 
-            .top-bar .top-bar__menu .top-bar__item.dashboard {
+            .top-bar ul.top-bar__menu li.dashboard {
                 float: right;
             }
     
-    .top-bar .top-bar__icons > * {
+    .top-bar ul.top-bar__icons > * {
         float: left;
         line-height: 26px;
         width: 50%;
@@ -317,6 +319,7 @@ a:hover {
             }
 
         .map-container .search .search__mylocation {
+            cursor: pointer;
             font-size: 21px;
             position: absolute;
             right: 17px;
@@ -365,7 +368,7 @@ a:hover {
                         color: #9dc1f4;
                     }
 
-                    .map-container .map-labels .map-labels__item.alerts .map-labels__icon {
+                    .map-container .map-labels .map-labels__item.updates .map-labels__icon {
                         color: #c82a29;
                         font-size: 24px;
                     }
@@ -384,7 +387,7 @@ a:hover {
                 }
 
 .water-awareness-container {
-    margin: 110px 0 80px;
+    margin: 110px auto 80px;
 }
     @media screen and (min-width: 992px) {
         .water-awareness-container {
@@ -444,17 +447,17 @@ a:hover {
         }
            
 
-.alerts-container {
-    margin: 110px 0 80px;
+.updates-container {
+    margin: 110px auto 80px;
 }
     @media screen and (min-width: 992px) {
-        .alerts-container {
+        .updates-container {
             margin-top: 100px;
             margin-bottom: 30px;
         }
     }
 
-    .alerts-container .content {
+    .updates-container .content {
         background: #fff;
         filter: drop-shadow(0 4px 2px rgba(0,0,0,.1));
         height: 130px;
@@ -462,26 +465,20 @@ a:hover {
         margin-bottom: 20px;
         padding: 0 25px 10px;
     }
-
         @media screen and (min-width: 992px) {
             
         }
 
-    .alerts-container .content h2 {
+    .updates-container .content h2 {
         font-weight: 400;
         line-height: 1.25;
     }
 
-    .alerts-container .content h2 {
+    .updates-container .content h2 {
         font-size: 18px;
         margin-bottom: 0;
     }
 
-    .alerts-container .content p {
+    .updates-container .content p {
         font-weight: 300;
-    }
-
-        @media screen and (min-width: 992px) {
-            
-        }
-            
+    }            
