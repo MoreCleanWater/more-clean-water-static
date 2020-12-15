@@ -482,3 +482,39 @@ a:hover {
     .updates-container .content p {
         font-weight: 300;
     }            
+
+
+
+.profile-container {
+    margin: 110px auto 80px;
+}
+    @media screen and (min-width: 992px) {
+        .profile-container {
+            margin-top: 100px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .profile-container .content {
+        background: #fff;
+        filter: drop-shadow(0 4px 2px rgba(0,0,0,.1));
+        margin-bottom: 20px;
+        padding: 40px 25px 20px;
+    }
+        .profile-container .content input {
+            border: 1px solid #dddddd;
+            border-radius: 10px;
+            color: #757575;
+            filter: drop-shadow(0 4px 2px rgba(0,0,0,.1));
+            font-family: Roboto;
+            font-size: 19px;
+            font-weight: 300;
+            height: 45px;
+            margin-bottom: 20px;
+            padding: 0 25px;
+            width: calc(100% - 50px);
+        }
+
+        .profile-container .content button {
+            width: 120px;
+        }
