@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="sidebar">
-        <div id="sidebar__button" class="sidebar__button material-icons">
+        <div id="sidebar__button" class="sidebar__button material-icons" target-element="sidebar__menu">
             menu
         </div>
         
@@ -110,7 +110,7 @@
     
                 <ul class="top-bar__icons mui-col-lg-1">
                     <li class="top-bar__updates material-icons">
-                        <a href="updates.html">notifications</a>
+                        <a href="javascript:void(0)" id="notifications" target-element="updates-overlay">notifications</a>
                     </li>
         
                     <li class="top-bar__user material-icons">
@@ -124,7 +124,7 @@
     <div id="container" class="mui-container profile-container">
         <div class="mobile-top-bar"></div>
         <div class="mui-row">
-            <div class="content mui-col-xs-10 mui-col-xs-offset-1 mui-col-md-8 mui-col-md-offset-2">
+            <div class="form mui-col-xs-10 mui-col-xs-offset-1 mui-col-md-8 mui-col-md-offset-2">
                 <form action="">
                     <p><input id="add-name" class="add-user__input-field" placeholder="Name"></input></p>
                     <p><input id="add-email" class="add-user__input-field" placeholder="Email"></input></p>
@@ -135,6 +135,38 @@
                     </div>
                 </form>
             </div>
+        </div>
+    </div>
+
+    <div id="updates-overlay" class="updates-container overlay">
+        <div class="update">
+            <h2 class="update__title">
+                Water shortage update
+            </h2>
+
+            <p class="update__description">
+                Description detailing the update 
+            </p>
+        </div>
+
+        <div class="update">
+            <h2 class="update__title">
+                Unsafe Area update
+            </h2>
+
+            <p class="update__description">
+                Description detailing the update 
+            </p>
+        </div>
+
+        <div class="update">
+            <h2 class="update__title">
+                New content update
+            </h2>
+
+            <p class="update__description">
+                Description detailing the update 
+            </p>
         </div>
     </div>
 
