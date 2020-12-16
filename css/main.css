@@ -27,7 +27,10 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:active,
+a:focus,
+a:visited {
     text-decoration: none;
 }
 
@@ -252,10 +255,14 @@ a:hover {
     
     .top-bar ul.top-bar__icons > * {
         float: left;
-        line-height: 26px;
+        list-style: none;
         width: 50%;
         text-align: center;
+        position: relative;
     }
+        .top-bar ul.top-bar__icons li a {
+            line-height: 26px;
+        }
 
 .map-container {
     height: 100%;
@@ -440,24 +447,32 @@ a:hover {
                 margin-bottom: 5px;
             }
         }
-           
 
 .updates-container {
     margin: 110px auto 80px;
 }
     .updates-container.overlay {
         border: 1px #dddddd solid;
-        border-radius: 10px;
         display: none;
         filter: drop-shadow(0 4px 6px rgba(0,0,0,.1));
         height: 375px;
         margin: 0;
-        overflow: hidden;
-        position: fixed;
-        right: 30px;
-        top: 90px;
+        position: absolute;
+        top: 70px;
+        right: calc(50% - 45px);
         width: 420px;
     }
+        .updates-container.overlay::before {
+            color: #ffffff;
+            font-family: Material Icons;
+            font-size: 60px;
+            line-height: 1;
+            position: absolute;
+            content: "arrow_drop_up";
+            top: -30px;
+            right: 15px;
+        }
+
         .updates-container.overlay.show {
             display: block;
         }
@@ -475,6 +490,12 @@ a:hover {
                 filter: none;
                 margin-bottom: 0;
             }
+            .updates-container.overlay .update:first-child {
+                border-radius: 10px 10px 0 0;
+            }
+            .updates-container.overlay .update:last-child {
+                border-radius: 0 0 10px 10px;
+            }
         }
 
     .updates-container .update h2 {
@@ -485,6 +506,7 @@ a:hover {
         font-size: 18px;
         height: 25px;
         margin: 0;
+        text-align: left;
         width: 100%;
     }
 
@@ -493,6 +515,7 @@ a:hover {
         font-weight: 300;
         height: 40px;
         margin: 0;
+        text-align: left;
         width: 100%;
     }            
 
